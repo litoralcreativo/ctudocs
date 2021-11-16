@@ -18,8 +18,121 @@
         <a class="selected" href="docs.html">Docs</a>
         <a href="about.html">Nosotros</a>
         <a href="contact.html">Contacto</a>
-        <a class="disabled">Descargas</a>
       </nav>
+      <div class="mt-nav"></div>
+      <div class="doc-container">
+        <h1>Documentacion</h1>
+        <div class="doc-element">
+          <h2>Interfaz</h2>
+          <p>
+            La ayuda aún se encuentra en construcción, por lo que no cubre todas
+            las funcionalidades a nivel de interfaz. Los tópicos disponibles
+            son:
+          </p>
+          <ul>
+            <li><a href="#archivo">Archivo</a></li>
+            <li><a href="#propiedades">Propiedades</a></li>
+            <li><a href="#propietarios">Propietarios</a></li>
+            <li><a href="#impresion">Impresion</a></li>
+          </ul>
+          <img src="img/01.jpg" alt="" />
+        </div>
+        <div class="doc-element" id="archivo">
+          <h2>Archivo</h2>
+          <p>
+          <span class="strong-li">Iniciar Sesión</span class="strong-li">: Iniciar la sesión con un usuario
+          valido. Nombre de usuario y contraseña.
+          </p>
+          <img src="img/02.jpg" alt="" />
+          <p>
+            <span class="strong-li">Cerrar Sesión</span class="strong-li">: Cierra la sesión del usuario
+            actual.
+
+          </p>
+          <p>
+            <span class="strong-li">Registrar Usuario</span class="strong-li">: Agrega un usuario para acceder
+            a la aplicación. Se solicitara Nombre, Apellido, un nombre de
+            usuario y contraseña para hacer efectiva la activación del mismo.
+            Deberá tildar la casilla inferior derecha si se desea que el nuevo
+            usuario tenga credenciales de administrador.
+          </p>
+          <img src="img/03.jpg" alt="" />
+          <p>
+            <span class="strong-li">Exportar Sistema</span class="strong-li">: Realiza un backup del sistema y
+            todos sus campos en al momento actual del mismo. El cual puede ser
+            posteriormente utilizado para la recuperación del sistema de
+            acuerdo a la versión del archivo de backup que se esté importando.
+          </p>
+          <p>
+            <span class="strong-li">Importar Sistema</span class="strong-li">: Sirve para retornar el sistema
+            a un punto de control mediante un archivo previamente guardado,
+            (Exportar Sistema) a la versión de dicho archivo.
+          </p>
+          <p>
+            <span class="strong-li">Página de Ayuda</span class="strong-li">: Ingresar a la página de ayuda de
+            CTU BOOKING.
+          </p>
+          <p><span class="strong-li">Salir</span class="strong-li">: Sale de la aplicación.</p>
+          <img src="img/04.jpg" alt="">
+        </div>
+        <div class="doc-element" id="propiedades">
+          <h2>Propiedades</h2>
+          <p>
+
+            <span class="strong-li">Crear Propiedad</span>: Inicialmente deberá añadir un nuevo propietario, o de ya poseer uno o más, seleccionar el mismo de la lista de propietarios. Para crear la propiedad una vez seleccionada la opción, se desplegara la ventana <span class="enfasis">nueva propiedad</span>. Deberá cargar el propietario seleccionando uno. Colocar el nombre de la propiedad, La localidad, si ya se encuentra cargada en lista seleccionar desde la marca, de otra manera deberá crear una nueva desde el botón <span class="enfasis">Nueva</span>. Colocar la dirección de la propiedad, las plazas y el precio base. A su derecha marcar las opciones según Tipo de Propiedad y Servicios a ofrecer. La categoría deberá ser elegida también, de lo contrario el sistema dejara por defecto el número 1. Una vez cargados los datos de la propiedad deberá confirmar la misma para que ésta sea exitosa la y quede registrada.
+          </p>
+          <img src="img/08.jpg" alt="" />
+          <h3><span class="strong-li">Buscar Propiedad</span></h3>
+          <p>
+            <strong>1. Filtrar Propiedad</strong>: Mediante las casillas de selección puede marcar las distintas opciones por las que desea buscar la propiedad, estas pueden ser, por Tipo de propiedad, por los Servicios disponibles, por Precio (Min, Max) y por cantidad de Plazas (Exactas, Mínimas) y filtrar por las mismas.
+          </p>
+          <img src="img/05.jpg" alt="" />
+          <p>
+            <strong>2. Editar Propiedad</strong>: Si posee las credenciales de “administrador” mediante esta opción podrá editar las opciones de la propiedad, como así también borrar las propiedades deseadas.</li>
+          </p>
+          <img src="img/06.jpg" alt="" />
+          <p>
+            <strong>3. Ver Disponibilidad</strong>: Ver disponibilidad de las propiedades con las opciones de filtrado seleccionadas. Siempre que la aplicación tenga propiedades cargas con anterioridad (cualquier usuario). Accede a los días del mes disponibles para reservar y confirmar su selección una vez completados los datos del cliente. Los que deben ser completados en su totalidad (Nombre, CUIT/CUIL, Teléfono y Dirección).
+          </p>
+          <img src="img/07.jpg" alt="" />
+        </div>
+        <div class="doc-element" id="propietarios">
+          <h2>Propietarios</h2>
+          <p>
+            <span class="strong-li">Añadir Propietario</span>: Con credenciales de “administrador” podrá añadir los mismos. Se solicitara Nombre, Apellido, DNI y Teléfono.
+          </p>
+          <img src="img/09.jpg" alt="" />
+          <p>
+              <span class="strong-li">Listar Propietario</span>: Se despliega la ventana mostrando la Disponibilidad de propietarios y su conformación mediante un listado.
+          </p>
+          <p>
+            <strong>1. Migrar Reservas</strong>: Exporta todas las reservas de un propietario a un archivo “csv.”
+          </p>
+          <p>
+            <strong>2. Generar Resumen</strong>: Genera un archivo PDF con las reservas actuales del propietario listado.
+          </p>
+          <p>
+            <strong>3. Salir</strong>: Salir de la ventana actual.
+          </p>
+          <img src="img/10.jpg" alt="" />
+
+        </div>
+        <div class="doc-element" id="impresion">
+          <h2>Impresion</h2>
+          <p>
+            <span class="strong-li">Vista previa</span>: Se abre ventana mostrando una vista previa de lo que se está por imprimir. Se puede realizar una impresión desde la misma.
+          </p>
+          <img src="img/11.jpg" alt="" />
+          <p>
+            <span class="strong-li">Configurar Pagina</span>: Abre una ventana desde la cual puede configurar la página donde se realizará la impresión, la orientación de la misma, márgenes y papel.
+          </p>
+          <img src="img/12.jpg" alt="" />
+          <p>
+            <span class="strong-li">Imprimir</span>: Abre la ventana de impresión, selección de impresora, intervalos, etc.
+          </p>
+          <img src="img/13.jpg" alt="" />
+        </div>
+      </div>
     </div>
   </body>
 </html>

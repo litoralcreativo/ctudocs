@@ -1,7 +1,10 @@
-* {
+body {
   margin: 0;
   padding: 0;
   font-family: "Courier New", Courier, monospace;
+  --primary: rgb(231, 197, 133);
+  --secondary: rgb(255, 241, 214);
+  word-wrap: break-word;
 }
 
 .nav {
@@ -14,6 +17,7 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  height: 70px;
 }
 
 a {
@@ -43,15 +47,140 @@ a {
 .container {
   display: flex;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .center {
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .bg-primary {
-  background-color: wheat;
+  background-color: rgb(255, 241, 214);
+}
+
+.mt-nav {
+  height: 70px;
+}
+
+.integrantes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  width: 100%;
+}
+
+.integrante-card {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: justify;
+}
+
+.integrante-card p {
+  width: 100%;
+}
+
+.profile-photo {
+  margin-top: 2rem;
+  width: 90%;
+  height: 30rem;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: 100% 0;
+  border: 1px solid rgb(231, 197, 133);
+}
+
+.doc-container,
+.contact-container,
+.about-container,
+.main-container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.main-container h1,
+.main-container h2 {
+  margin: 0;
+}
+
+.contact-container form {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 500px;
+  max-width: 100%;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.doc-element {
+  padding: 1rem;
+  width: 100%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  margin: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  border-radius: 10px;
+}
+
+.doc-element p,
+.doc-element ul {
+  width: 100%;
+}
+
+.doc-element h2 {
+  text-decoration: underline;
+}
+.doc-element a {
+  color: rgb(231, 197, 133);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+img {
+  align-self: center;
+  width: auto;
+  max-width: 90%;
+  height: auto;
+}
+
+.strong-li {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+ul li {
+  margin-top: 1rem;
+}
+
+.enfasis {
+  color: rgb(231, 197, 133);
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+li strong {
+  font-size: 1.1rem;
 }
